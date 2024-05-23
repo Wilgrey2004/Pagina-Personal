@@ -1,0 +1,158 @@
+:root {
+  --back-Color:#627254;
+  --font-color: #DDDDDD;
+  --lithe-fond-color:#76885B;
+
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--back-Color);
+  color: var(--font-color);
+}
+
+.contenedor {
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+
+.contenedor header {
+  border-bottom: 1px solid black;
+  text-align: center;
+
+  margin: 20px;
+}
+
+.contenedor header h1 {
+  font-size: 50px;
+  color: rgb(0, 0, 0);
+  transition: 0.5s;
+}
+
+.contenedor header h1:hover {
+  color: var(--font-color);
+  transform: scale(1.2);
+}
+
+.contenedor main section {
+  padding: 10px;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hobbies {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hobbies h2{
+  text-align: center;
+}
+
+
+.hobbies img:first-child {
+  width: 300px;
+}
+.hobbies img {
+  width: 400px;
+}
+
+.hobbies ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.hobbies ul li {
+  flex: 1;
+  list-style: none;
+  font: caption;
+  background-color: var(--lithe-fond-color);
+  display: flex;
+  width: 30%;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10px;
+  color: wheat;
+  border: 2px solid var(--font-color);
+  border-radius: 30px;
+  box-sizing: border-box;
+  box-shadow: 2px 4px 6px rgb(179, 178, 178);
+  transition: 0.5s;
+}
+
+.hobbies ul li:hover {
+  transform: scale(1.2);
+  box-shadow: 4px 4px 8px rgb(179, 178, 178);
+}
+
+.hobbies ul li:not(:hover) {
+  transform: scale(0.8);
+  box-shadow: 1px 2px 3px rgb(179, 178, 178);
+}
+
+.hobbies ul li img {
+  width: 40%;
+  border-radius: 10px;
+}
+
+.hobbies ul li p {
+  margin-bottom: 20px;
+}
+.unpocosobremi {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 0;
+}
+
+.textimg {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.textimg .texto {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.textimg p {
+  width: 400px;
+  margin-right: 30px;
+}
+
+.textimg img {
+  width: 300px;
+  border-radius: 50px;
+  border: 2px solid gray;
+}
+
+
+footer{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+footer div{
+  display: flex;
+  justify-content: space-around;
+}
+
+footer div img{
+  width: 100px;
+  margin: 20px;
+  transition: 0.5s;
+  border-radius: 20px;
+
+}
+
+footer div img:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+}
