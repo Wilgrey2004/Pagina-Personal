@@ -2,8 +2,9 @@
   --back-Color:#627254;
   --font-color: #DDDDDD;
   --lithe-fond-color:#76885B;
-
+  --border-color :black;
 }
+
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -13,20 +14,19 @@ body {
 
 .contenedor {
   box-sizing: border-box;
-  border: 1px solid black;
+  border: 1px solid var(--border-color);
   border-radius: 50px;
 }
 
 .contenedor header {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--border-color);
   text-align: center;
-
   margin: 20px;
 }
 
 .contenedor header h1 {
   font-size: 50px;
-  color: rgb(0, 0, 0);
+  color: var(--border-color);
   transition: 0.5s;
 }
 
